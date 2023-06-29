@@ -30,7 +30,7 @@ function Header() {
             className="d-inline-block align-top border"
             style={{ borderRadius: "50%" }}
           />
-          <span className="mx-2">Hi, I'm Kevin.</span>
+          <span className="mx-2">Hello World. I'm Kevin.</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
