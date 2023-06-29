@@ -53,7 +53,7 @@ function Header() {
 
             <Button
               className="btn-sm btn-success mx-2 my-1"
-              href="./src/assets/Kevin_Li_Resume_June_2023.pdf"
+              href="https://drive.google.com/file/d/1Z3VS7jWPz5cE74UtLrXOYe7ADAzr1lXx/view?usp=drive_link"
               download
             >
               Get Resume ↓
