@@ -1,0 +1,7 @@
+.project-card {
+  opacity: 85%;
+}
+
+.project-card:hover {
+  opacity: 100%;
+}
