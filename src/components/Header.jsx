@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Container, Button, NavDropdown, Navbar, Nav } from "react-bootstrap";
 import headshot from "../assets/headshot_zoom.png";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -44,9 +41,40 @@ function Header() {
             <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/projects" onClick={handleNavClick}>
+            {/* <Nav.Link as={Link} to="/projects" onClick={handleNavClick}>
               Projects
-            </Nav.Link>
+            </Nav.Link> */}
+            <NavDropdown title="Projects" id="basic-nav-dropdown">
+              <NavDropdown.Item
+                as={Link}
+                to="/projects/orangeboxalerts"
+                onClick={handleNavClick}
+              >
+                Orange Box Alerts
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/projects/mbtatracker"
+                onClick={handleNavClick}
+              >
+                MBTA Tracker
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/projects/helloworld"
+                onClick={handleNavClick}
+              >
+                helloWorld.ai
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item
+                as={Link}
+                to="/projects"
+                onClick={handleNavClick}
+              >
+                All Projects
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link as={Link} to="/contact" onClick={handleNavClick}>
               Contact
             </Nav.Link>

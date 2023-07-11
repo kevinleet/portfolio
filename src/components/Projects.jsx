@@ -1,4 +1,5 @@
 import { Container, Button, Card, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import orangeboxalerts from "../assets/orangeboxalerts2.png";
 import mbtatracker from "../assets/mbta_tracker.png";
 import helloworld from "../assets/helloworld2.png";
@@ -20,7 +21,13 @@ const Projects = () => {
                 Product restock notifier with automated web scraping and email
                 notification capabilities.
               </Card.Text>
-              <Button variant="primary">View Project</Button>
+              <Button
+                as={Link}
+                to="/projects/orangeboxalerts"
+                variant="primary"
+              >
+                View Project
+              </Button>
             </Card.Body>
           </Card>
           <Card
@@ -34,7 +41,9 @@ const Projects = () => {
                 Public transportation tracking application with real-time data
                 and position plotting.
               </Card.Text>
-              <Button variant="primary">View Project</Button>
+              <Button as={Link} to="/projects/mbtatracker" variant="primary">
+                View Project
+              </Button>
             </Card.Body>
           </Card>
           <Card
@@ -51,7 +60,9 @@ const Projects = () => {
                 Mobile-responsive messaging platform with real time chatting and
                 OpenAI integration.
               </Card.Text>
-              <Button variant="primary">View Project</Button>
+              <Button as={Link} to="/projects/helloworld" variant="primary">
+                View Project
+              </Button>
             </Card.Body>
           </Card>
         </Row>
