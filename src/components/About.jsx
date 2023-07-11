@@ -9,7 +9,7 @@ const About = () => {
     <Container className="">
       <Container id="about" className="mx-auto my-4">
         <Row className="mt-3 align-items-center mb-5">
-          <Col md={6}>
+          <Col md={7}>
             <h1 className="mb-4 display-5">Past</h1>
             <p className="fs-6">
               My passion for programming and web development was ignited at an
@@ -45,13 +45,13 @@ const About = () => {
               meaningful contributions.
             </p>
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             <img src={past} className="w-100 rounded" />
           </Col>
         </Row>
         <hr />
         <Row className="mt-5 mb-5">
-          <Col md={6} className="order-md-2">
+          <Col md={7} className="order-md-2">
             <h1 className="mb-4 display-5">Present</h1>
             <p className="fs-6">
               In the present, I have built upon my passion for programming and
@@ -82,7 +82,7 @@ const About = () => {
             </p>
           </Col>
           <Col
-            md={6}
+            md={5}
             className="d-flex flex-column justify-content-center align-items-center"
           >
             <img src={present} className="w-100 rounded" />
@@ -99,7 +99,7 @@ const About = () => {
         </Row>
         <hr />
         <Row className="mt-5 align-items-center mb-5">
-          <Col md={6}>
+          <Col md={7}>
             <h1 className="mb-4 display-5">Future</h1>
             <p className="fs-6">
               Looking ahead, I am excited to continue my journey in programming
@@ -122,7 +122,7 @@ const About = () => {
               lie ahead in shaping the future of technology.
             </p>
           </Col>
-          <Col md={6}>
+          <Col md={5}>
             <img src={future} className="w-100 rounded" />
           </Col>
         </Row>

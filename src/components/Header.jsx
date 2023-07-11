@@ -41,10 +41,10 @@ function Header() {
             <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
               About
             </Nav.Link>
-            {/* <Nav.Link as={Link} to="/projects" onClick={handleNavClick}>
+            <Nav.Link as={Link} to="/projects" onClick={handleNavClick}>
               Projects
-            </Nav.Link> */}
-            <NavDropdown title="Projects" id="basic-nav-dropdown">
+            </Nav.Link>
+            {/* <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item
                 as={Link}
                 to="/projects/orangeboxalerts"
@@ -74,7 +74,7 @@ function Header() {
               >
                 All Projects
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
             <Nav.Link as={Link} to="/contact" onClick={handleNavClick}>
               Contact
             </Nav.Link>
