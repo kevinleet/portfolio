@@ -19,14 +19,16 @@ function Header() {
     >
       <Container>
         <Navbar.Brand className="d-flex align-items-center">
-          <img
-            alt=""
-            src={headshot}
-            width="60"
-            height="60"
-            className="d-inline-block align-top border"
-            style={{ borderRadius: "50%" }}
-          />
+          <Link to="/">
+            <img
+              alt=""
+              src={headshot}
+              width="60"
+              height="60"
+              className="d-inline-block align-top border border border-light bg-light"
+              style={{ borderRadius: "50%" }}
+            />
+          </Link>
           <span className="mx-2">Hello World. I'm Kevin.</span>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -35,46 +37,12 @@ function Header() {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto header">
-            <Nav.Link as={Link} to="/" onClick={handleNavClick}>
-              Home
-            </Nav.Link>
             <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
               About
             </Nav.Link>
             <Nav.Link as={Link} to="/projects" onClick={handleNavClick}>
               Projects
             </Nav.Link>
-            {/* <NavDropdown title="Projects" id="basic-nav-dropdown">
-              <NavDropdown.Item
-                as={Link}
-                to="/projects/orangeboxalerts"
-                onClick={handleNavClick}
-              >
-                Orange Box Alerts
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/projects/mbtatracker"
-                onClick={handleNavClick}
-              >
-                MBTA Tracker
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/projects/helloworld"
-                onClick={handleNavClick}
-              >
-                helloWorld.ai
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item
-                as={Link}
-                to="/projects"
-                onClick={handleNavClick}
-              >
-                All Projects
-              </NavDropdown.Item>
-            </NavDropdown> */}
             <Nav.Link as={Link} to="/contact" onClick={handleNavClick}>
               Contact
             </Nav.Link>

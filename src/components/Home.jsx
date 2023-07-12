@@ -3,9 +3,9 @@ import bg from "../assets/bg.png";
 
 const Home = () => {
   return (
-    <Container className="">
-      <Container id="about" className="mx-auto text-center m-3">
-        <img src={bg} className="w-100" />
+    <Container className="mt-4">
+      <Container id="home" className="w-full mx-auto text-center">
+        <h1 className="lead display-1">Landing Page</h1>
       </Container>
     </Container>
   );

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <Container className="">
       <Container id="about" className="mx-auto my-4">
-        <Row className="mt-3 align-items-center mb-5">
+        <Row className="mt-3 align-items-center mb-md-5">
           <Col md={7}>
             <h1 className="mb-4 display-5">Past</h1>
             <p className="fs-6">
@@ -50,7 +50,7 @@ const About = () => {
           </Col>
         </Row>
         <hr />
-        <Row className="mt-5 mb-5">
+        <Row className="mt-md-5 mb-md-5">
           <Col md={7} className="order-md-2">
             <h1 className="mb-4 display-5">Present</h1>
             <p className="fs-6">
@@ -98,7 +98,7 @@ const About = () => {
           </Col>
         </Row>
         <hr />
-        <Row className="mt-5 align-items-center mb-5">
+        <Row className="mt-md-5 align-items-center mb-md-5">
           <Col md={7}>
             <h1 className="mb-4 display-5">Future</h1>
             <p className="fs-6">

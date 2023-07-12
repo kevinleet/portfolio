@@ -18,7 +18,7 @@ const Projects = () => {
     <Container className="">
       <Container id="orange-box-alerts" className="mx-auto my-2">
         <Container className="d-flex justify-content-start">
-          <h1 className="mt-2 mb-2 display-5">Orange Box Alerts</h1>
+          <h1 className="mt-2 mb-2 display-5 fw-medium">Orange Box Alerts</h1>
         </Container>
         <Row className="mt-3 align-items-center mb-5">
           <Col md={6} xs={12} className="order-2 order-md-1">
@@ -66,7 +66,6 @@ const Projects = () => {
                   Back End: Express, Mongoose, MongoDB Atlas, Nodemailer, Axios,
                   Zenrows
                 </li>
-                <li>Deployment: Railway</li>
               </ul>
               <Container className="d-flex justify-content-center align-items-center">
                 <Button
@@ -133,8 +132,8 @@ const Projects = () => {
       </Container>
       <hr />
       <Container id="mbta-tracker" className="mx-auto my-2">
-        <Container className="d-flex justify-content-end">
-          <h1 className="mt-2 mb-2 display-5">MBTA Tracker</h1>
+        <Container className="d-flex justify-content-start justify-content-md-end">
+          <h1 className="mt-2 mb-2 display-5 fw-medium">MBTA Tracker</h1>
         </Container>
         <Row className="mt-3 align-items-center mb-5">
           <Col md={6} xs={12} className="order-2">
@@ -184,7 +183,6 @@ const Projects = () => {
                   HTML, CSS, JavaScript, jQuery, Axios, MBTA V3 API, MapQuest.js
                   SDK
                 </li>
-                <li>Deployment: Surge</li>
               </ul>
               <Container className="d-flex justify-content-center align-items-center">
                 <Button
@@ -245,7 +243,7 @@ const Projects = () => {
       <hr />
       <Container id="helloworld" className="mx-auto my-2">
         <Container className="d-flex justify-content-start">
-          <h1 className="mt-2 mb-2 display-5">helloWorld.ai</h1>
+          <h1 className="mt-2 mb-2 display-5 fw-medium">helloWorld.ai</h1>
         </Container>
         <Row className="align-items-center mb-5">
           <Col md={6} xs={12} className="order-2 order-md-1">
@@ -261,37 +259,34 @@ const Projects = () => {
               <strong>Features: </strong>
               <ul>
                 <li>
-                  User authentication: Users can log in to the application using
-                  their Google accounts via OAuth 2.0.
+                  Real-Time Chatting: Engage in seamless, real-time
+                  conversations with other users through Socket.io's highly
+                  responsive WebSocket communication, ensuring minimal latency.
+                </li>
+
+                <li>
+                  AI-Powered Responses: Harnessing OpenAI's API, our application
+                  delivers intelligent and precise responses, utilizing the
+                  latest advancements in artificial intelligence.
                 </li>
                 <li>
-                  Subscription management: Users can subscribe to product
-                  restock alerts, enabling them to receive notifications when
-                  products become available.
+                  Mobile-Responsive Interface: Thoughtfully designed with
+                  Tailwind for devices of varying sizes for an intuitive and
+                  distraction-free chatting experience.
                 </li>
                 <li>
-                  Payment integration: Stripe integration allows users to
-                  securely make payments for subscription plans.
-                </li>
-                <li>
-                  Automated restock scanning: The application frequently scans
-                  the Hermes web store for new product restocks, ensuring timely
-                  notifications to subscribed users.
-                </li>
-                <li>
-                  Responsive user interface: The application provides an
-                  intuitive and user-friendly interface built with React and
-                  Bootstrap, making it accessible across various devices.
+                  Privacy and Security: Secures user data with bcrypt, hashing
+                  all user passwords during signup to ensure utmost privacy and
+                  protection.
                 </li>
               </ul>
               <strong>Technologies Used: </strong>
               <ul>
                 <li>
                   Front End: HTML, CSS, JavaScript, Vite, React.js, Tailwind,
-                  socket.io, OpenAI, bcrypt.js
+                  Socket.IO, OpenAI, bcrypt.js
                 </li>
                 <li>Back End: Express, Mongoose, MongoDB Atlas, Axios</li>
-                <li>Deployment: Railway</li>
               </ul>
               <Container className="d-flex justify-content-center align-items-center">
                 <Button
@@ -318,11 +313,44 @@ const Projects = () => {
             xs={12}
             className="order-1 order-md-2 d-flex justify-content-center align-items-center"
           >
-            <Container className="mb-2">
+            <Container className="mb-2 d-block d-lg-none">
               <Carousel touch={true} interval={null}>
                 <Carousel.Item>
                   <img
-                    className="d-block mx-auto w-full"
+                    className="d-block mx-auto w-75"
+                    src={helloworld_image1}
+                    alt="First slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block mx-auto w-75"
+                    src={helloworld_image2}
+                    alt="Second slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block mx-auto w-75"
+                    src={helloworld_image3}
+                    alt="Third slide"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block mx-auto w-75"
+                    src={helloworld_image4}
+                    alt="Fourth slide"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </Container>
+
+            <Container className="mb-2 d-none d-lg-block">
+              <Carousel touch={true} interval={null}>
+                <Carousel.Item>
+                  <img
+                    className="d-block mx-auto"
                     src={helloworld_image1}
                     alt="First slide"
                     style={{ maxHeight: "40em" }}
@@ -356,84 +384,10 @@ const Projects = () => {
             </Container>
           </Col>
         </Row>
+        <hr />
       </Container>
     </Container>
   );
 };
 
 export default Projects;
-
-// import { Container, Button, Card, Row, Nav } from "react-bootstrap";
-// import { Link } from "react-router-dom";
-// import orangeboxalerts from "../assets/orangeboxalerts/card.png";
-// import mbtatracker from "../assets/mbta_tracker.png";
-// import helloworld from "../assets/helloworld2.png";
-
-// const Projects = () => {
-//   return (
-//     <Container className="">
-//       <Container id="projects" className="mx-auto text-center my-4">
-//         <Row className="justify-content-center">
-//           <Card
-//             id="orangeboxalerts"
-//             style={{ width: "24rem" }}
-//             className="project-card m-3 p-2 bg-secondary text-light"
-//           >
-//             <Card.Img className="rounded" src={orangeboxalerts} />
-//             <Card.Body>
-//               <Card.Title>Orange Box Alerts</Card.Title>
-//               <Card.Text>
-//                 Product restock notifier with automated web scraping and email
-//                 notification capabilities.
-//               </Card.Text>
-//               <Button
-//                 as={Link}
-//                 to="/projects/orangeboxalerts"
-//                 variant="success"
-//               >
-//                 View Project
-//               </Button>
-//             </Card.Body>
-//           </Card>
-//           <Card
-//             style={{ width: "24rem" }}
-//             className="project-card m-3 p-2 bg-secondary text-light"
-//           >
-//             <Card.Img className="rounded my-1" src={mbtatracker} />
-//             <Card.Body>
-//               <Card.Title>MBTA Tracker</Card.Title>
-//               <Card.Text>
-//                 Public transportation tracking application with real-time data
-//                 and position plotting.
-//               </Card.Text>
-//               <Button as={Link} to="/projects/mbtatracker" variant="success">
-//                 View Project
-//               </Button>
-//             </Card.Body>
-//           </Card>
-//           <Card
-//             style={{ width: "24rem" }}
-//             className="project-card m-3 p-2 bg-secondary text-light"
-//           >
-//             <Card.Img
-//               className="rounded px-2 py-4 mt-2 mb-3 bg-dark"
-//               src={helloworld}
-//             />
-//             <Card.Body>
-//               <Card.Title>helloWorld.ai</Card.Title>
-//               <Card.Text>
-//                 Mobile-responsive messaging platform with real time chatting and
-//                 OpenAI integration.
-//               </Card.Text>
-//               <Button as={Link} to="/projects/helloworld" variant="success">
-//                 View Project
-//               </Button>
-//             </Card.Body>
-//           </Card>
-//         </Row>
-//       </Container>
-//     </Container>
-//   );
-// };
-
-// export default Projects;
