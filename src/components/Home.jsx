@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
 import bg from "../assets/bg.png";
+import bg2 from "../assets/bg2.png";
 
 const Home = () => {
   return (
     <Container className="w-100 mt-4">
       <Container className="" style={{ zIndex: -1 }}>
-        <img src={bg} className="w-75 opacity-50 position-absolute"></img>
+        <img src={bg2} className="w-100"></img>
       </Container>
-      <Container
+      {/* <Container
         className="w-full d-flex flex-column align-items-center justify-content-center mx-auto text-center position-relative text-white"
         style={{ height: "625px" }}
       >
@@ -25,7 +26,7 @@ const Home = () => {
             <br />
           </h3>
         </span>
-      </Container>
+      </Container> */}
     </Container>
   );
 };
