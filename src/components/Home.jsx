@@ -1,7 +1,5 @@
 import { Container } from "react-bootstrap";
-import bg from "../assets/bg.png";
 import bg2 from "../assets/bg2.png";
-import bg3 from "../assets/bg3.png";
 import bg4 from "../assets/bg4.png";
 
 const Home = () => {
