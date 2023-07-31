@@ -395,7 +395,7 @@ const Projects = () => {
           <h1 className="mt-2 mb-2 display-5 fw-medium">myOS</h1>
         </Container>
         <Row className="mt-3 align-items-center mb-5">
-          <Col md={6} xs={12} className="order-1">
+          <Col md={6} xs={12} className="order-2">
             <Container>
               <p className="fs-6">
                 <span className="lead">
@@ -455,7 +455,7 @@ const Projects = () => {
               </Container>
             </Container>
           </Col>
-          <Col md={6} xs={12} className="order-2">
+          <Col md={6} xs={12} className="order-1">
             <Container className="mb-2">
               <Carousel touch={true} interval={null} variant="dark">
                 <Carousel.Item>
