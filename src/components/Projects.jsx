@@ -12,6 +12,10 @@ import helloworld_image1 from "../assets/helloworld/image1.png";
 import helloworld_image2 from "../assets/helloworld/image2.png";
 import helloworld_image3 from "../assets/helloworld/image3.png";
 import helloworld_image4 from "../assets/helloworld/image4.png";
+import myos1 from "../assets/myos/myos-1.png";
+import myos2 from "../assets/myos/myos-2.png";
+import myos3 from "../assets/myos/myos-3.png";
+import myos4 from "../assets/myos/myos-4.png";
 
 const Projects = () => {
   return (
@@ -384,8 +388,111 @@ const Projects = () => {
             </Container>
           </Col>
         </Row>
-        <hr />
       </Container>
+      <hr />
+      <Container id="myos" className="mx-auto my-2">
+        <Container className="d-flex justify-content-start justify-content-md-end">
+          <h1 className="mt-2 mb-2 display-5 fw-medium">myOS</h1>
+        </Container>
+        <Row className="mt-3 align-items-center mb-5">
+          <Col md={6} xs={12} className="order-1">
+            <Container>
+              <p className="fs-6">
+                <span className="lead">
+                  Interactive virtual desktop environment built with React and
+                  PostgreSQL, reimagining the nostalgic Windows XP experience.
+                </span>
+                <br />
+              </p>
+              <strong>Features: </strong>
+              <ul>
+                <li>
+                  Authentic Interface: Faithful replication of the familiar
+                  Windows-XP desktop user interface, complete with interactive
+                  desktop icons.
+                </li>
+                <li>
+                  Program Launching: Each desktop icon corresponds to a specific
+                  application, enabling users to launch various applications,
+                  such as Calculator, Pokedex, Connect Four, AOL Instant
+                  Messenger (powered by SmarterChild AI), Internet Explorer, and
+                  Notepad.
+                </li>
+                <li>
+                  AI-powered Chat: Chat with the legendary SmarterChild AI, now
+                  powered by the OpenAI API, and enjoy interactive and
+                  intelligent conversations reminiscent of the AOL Instant
+                  Messenger days. Export your chat logs, access them anytime via
+                  the Notepad application.
+                </li>
+                <li>
+                  Personalization: Customize your virtual desktop background
+                  with a selection of nostalgic Windows-XP inspired wallpapers
+                  using the Settings section.
+                </li>
+              </ul>
+              <strong>Technologies Used: </strong>
+              <ul>
+                <li>React, PostgreSQL, Bootstrap, OpenAI API, and more.</li>
+              </ul>
+              <Container className="d-flex justify-content-center align-items-center">
+                <Button
+                  href="https://myos.surge.sh/"
+                  target="_blank"
+                  variant="success"
+                  className="px-4 mx-2"
+                >
+                  Live Demo
+                </Button>
+                <Button
+                  href="https://github.com/kevinleet/myOS-client"
+                  target="_blank"
+                  variant="primary"
+                  className="px-4 mx-2"
+                >
+                  GitHub
+                </Button>
+              </Container>
+            </Container>
+          </Col>
+          <Col md={6} xs={12} className="order-2">
+            <Container className="mb-2">
+              <Carousel touch={true} interval={null} variant="dark">
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={myos1}
+                    alt="myOS Screenshot 1"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={myos2}
+                    alt="myOS Screenshot 2"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={myos3}
+                    alt="myOS Screenshot 3"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="d-block w-100"
+                    src={myos4}
+                    alt="myOS Screenshot 4"
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </Container>
+          </Col>
+        </Row>
+      </Container>
+
+      <hr />
     </Container>
   );
 };
